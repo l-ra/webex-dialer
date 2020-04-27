@@ -11,20 +11,23 @@
 		<ul id="out" class="list-group"></ul>
 		<hr>
 		<form>
-		<select id="telefon" class="form-control">
-			<option value="+420225986556" selected>+420225986556 (cz)</option>
-			<option value="800701543">800701543 (cz free)</option>
-			<option value="+421233215497">+421233215497 (sk)</option>
-			<option value="0800606293">0800606293 (sk free)</option>
-		</select>
+
+		<div class="form-group">
+			<select id="telefon" class="form-control">
+				<option value="+420225986556" selected>+420225986556 (cz)</option>
+				<option value="800701543">800701543 (cz free)</option>
+				<option value="+421233215497">+421233215497 (sk)</option>
+				<option value="0800606293">0800606293 (sk free)</option>
+			</select>
+		</div>
 
 		<div class="form-group">
 			<label for="nazev">Název</label>
-			<input id="nazev" placeholder="název pro tebe" class="form-control">
+			<input id="nazev" type="text" placeholder="název pro tebe" class="form-control">
 		</div>
 		<div class="form-group">
 			<label for="kod">Audio pass kod</label>
-			<input id="kod" placeholder="kod konference" class="form-control">
+			<input id="kod" ptype="text"  laceholder="kod konference" class="form-control">
 		</div>
 		<hr>
 		<button  class="form-control btn btn-primary" id="ok">Přidat</button>
