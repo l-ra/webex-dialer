@@ -39,7 +39,10 @@ function displayStored(storedIn){
         const display = `${ent.nazev}: ${ent.telefon};${ent.kod}*`
         const li = document.createElement("li");
         li.classList.add("list-group-item")
-        li.innerHTML = `<a href="${s(href)}">${s(display)}</a> <button  class="btn btn-outline-danger" onclick="removeEntry(event)" data-nazev="${s(ent.nazev)}">🗑️</button>`
+        li.innerHTML = `<div class="d-flex flex-row align-items-center">
+          <a class="flex-grow-1" href="${s(href)}">${s(display)}</a> 
+          <button class="btn btn-outline-danger" onclick="removeEntry(event)" data-nazev="${s(ent.nazev)}">🗑️</button>
+        </div>`
         out.appendChild(li)
     }
     const hash =encodeURIComponent(JSON.stringify(stored))
